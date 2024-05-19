@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="absolute right-0 top-0 h-screen w-full overflow-hidden">
       <div className="relative place-content-start lg:place-content-center h-full flex-col bg-muted text-white flex dark:border-r">
         <Image
-          src="/images/background.webp"
+          src="/images/background.png"
           alt="golden gate bridge"
           sizes="100%"
           fill
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="w-80 -mt-4">
             <Image
-              src="/images/submap.webp"
+              src="/images/submap.png"
               alt="submap"
               width={1170}
               height={2532}
