@@ -68,6 +68,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-1": "fadeIn 0.7s ease-in-out",
+        "fade-2": "fadeIn 1.0s ease-in-out",
+        "fade-3": "fadeIn 1.3s ease-in-out",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

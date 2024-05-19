@@ -17,12 +17,12 @@ const Hero = () => {
           sizes="100%"
           fill
           style={{ objectFit: "cover" }}
-          className="animate-fade"
+          className="animate-fade-1"
           priority
         />
         <div className="z-5 absolute w-screen h-screen backdrop-blur-md" />
         <TagCloud
-          className="z-10 absolute w-screen h-screen flex justify-center items-center font-mono text-xs font-bold text-foreground mix-blend-overlay"
+          className="z-10 absolute w-screen h-screen flex justify-center items-center font-mono text-xs font-bold text-foreground mix-blend-overlay animate-fade-2"
           options={(w: Window & typeof globalThis): any => ({
             radius: Math.max(w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "slow",
@@ -30,7 +30,7 @@ const Hero = () => {
         >
           {datum}
         </TagCloud>
-        <div className="z-20 flex flex-col items-center pt-8 lg:pt-0">
+        <div className="z-20 flex flex-col items-center pt-8 lg:pt-0 animate-fade-3">
           <div className="pb-4 text-5xl font-bold text-center">Submap</div>
           <div className="pb-4 font-semibold font-mono">Open-source iOS multimodal agent</div>
           <div className="pb-2 flex space-x-4">
@@ -51,7 +51,6 @@ const Hero = () => {
               width={1170}
               height={2532}
               style={{ objectFit: "contain" }}
-              className="animate-fade"
               priority
             />
           </div>
