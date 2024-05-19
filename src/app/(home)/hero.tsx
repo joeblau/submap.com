@@ -17,8 +17,6 @@ const Hero = () => {
           sizes="100%"
           fill
           style={{ objectFit: "cover" }}
-          className="animate-fade"
-          priority
         />
         <div className="z-5 absolute w-screen h-screen backdrop-blur-md" />
         <TagCloud
@@ -52,7 +50,6 @@ const Hero = () => {
               height={2532}
               style={{ objectFit: "contain" }}
               className="animate-fade"
-              priority
             />
           </div>
         </div>
