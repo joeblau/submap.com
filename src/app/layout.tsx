@@ -9,7 +9,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://submap.com'),
+  metadataBase: new URL("https://submap.com"),
   title: "Submap",
   description: "Open-source iOS multimodal agent",
   openGraph: {
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     creatorId: "",
     images: ["/images/og-image.png"],
   },
+  manifest: "/manifest.json",
   category: "AI",
 };
 
