@@ -17,12 +17,14 @@ const Hero = () => {
           sizes="100%"
           fill
           style={{ objectFit: "cover" }}
+          className="animate-fade"
+          priority
         />
         <div className="z-5 absolute w-screen h-screen backdrop-blur-md" />
         <TagCloud
           className="z-10 absolute w-screen h-screen flex justify-center items-center font-mono text-xs font-bold text-foreground mix-blend-overlay"
           options={(w: Window & typeof globalThis): any => ({
-            radius: Math.min(w.innerWidth, w.innerHeight) / 1.5,
+            radius: Math.max(w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "slow",
           })}
         >
@@ -50,6 +52,7 @@ const Hero = () => {
               height={2532}
               style={{ objectFit: "contain" }}
               className="animate-fade"
+              priority
             />
           </div>
         </div>
