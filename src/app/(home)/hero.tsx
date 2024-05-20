@@ -9,7 +9,7 @@ import { datum } from "@/lib/datum";
 
 const Hero = () => {
   return (
-    <div className="absolute right-0 top-0 h-screen w-full overflow-hidden">
+    <div className="absolute right-0 top-0 w-screen h-screen overflow-hidden">
       <div className="relative place-content-start lg:place-content-center h-full flex-col bg-muted text-white flex dark:border-r">
         <Image
           src="/images/background.png"
@@ -20,9 +20,8 @@ const Hero = () => {
           className="animate-fade-1"
           priority
         />
-        <div className="z-5 absolute w-screen h-screen backdrop-blur-md" />
         <TagCloud
-          className="z-10 absolute w-screen h-screen flex justify-center items-center font-mono text-xs font-bold text-foreground mix-blend-overlay animate-fade-2"
+          className="z-20 absolute w-screen h-screen flex justify-center items-center font-mono text-xs font-bold text-foreground mix-blend-overlay animate-fade-2"
           options={(w: Window & typeof globalThis): any => ({
             radius: Math.max(w.innerWidth, w.innerHeight) / 2,
             maxSpeed: "slow",
@@ -30,7 +29,7 @@ const Hero = () => {
         >
           {datum}
         </TagCloud>
-        <div className="z-20 flex flex-col items-center pt-8 lg:pt-0 animate-fade-3">
+        <div className="z-30 flex flex-col items-center pt-8 lg:pt-0 animate-fade-3">
           <div className="pb-4 text-5xl font-bold text-center">Submap</div>
           <div className="pb-4 font-semibold font-mono">Open-source iOS multimodal agent</div>
           <div className="pb-2 flex space-x-4">
