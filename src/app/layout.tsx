@@ -18,10 +18,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://submap.com"),
   title: "Submap",
-  description: "Open-source iOS multimodal agent",
+  description: "AI Assistant",
   openGraph: {
     title: "Submap",
-    description: "Open-source iOS multimodal agent",
+    description: "AI Assistant",
     url: "https://submap.com",
     siteName: "Submap",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Submap",
-    description: "Open-source iOS multimodal agent",
+    description: "AI Assistant",
     siteId: "",
     creator: "@joeblau",
     creatorId: "",

@@ -31,7 +31,7 @@ const Hero = () => {
         </TagCloud>
         <div className="z-30 flex flex-col items-center pt-8 lg:pt-0 animate-fade-3">
           <div className="pb-4 text-5xl font-bold text-center">Submap</div>
-          <div className="pb-4 font-semibold font-mono">Open-source iOS multimodal agent</div>
+          <div className="pb-4 font-semibold font-mono">AI Assistant</div>
           <div className="pb-2 flex space-x-4">
             <Button asChild disabled>
               <Link href="#"> Test Flight</Link>
